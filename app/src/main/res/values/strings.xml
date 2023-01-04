@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Firebase Android</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="provide_name">Please provide name</string>
+    <string name="provide_password">Please provide Password</string>
+    <string name="provide_email">Please provide email</string>
+    <string name="logging_account">logging to your account</string>
+
+    <string name="please_wait">Please Wait..</string>
+    <string name="email_not_sent">Email not sent</string>
+    <string name="sign_up_successful">User Sign Up Successfully</string>
+    <string name="sign_in_successful">User Sign In Successfully</string>
+    <string name="verify_email_first">PLease verify your email first</string>
+    <string name="creating_account_msg">We are creating your account</string>
+    <string name="email_verification_msg">Email Verification link sent to your email. please verify and then sign-in</string>
+</resources>
