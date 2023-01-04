@@ -89,6 +89,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
                         .show()
                     MainActivity.start(this)
                 } else {
+                    sendVerificationEmail()
                     Toast.makeText(
                         this@SignInActivity,
                         resources.getString(R.string.verify_email_first),
@@ -114,6 +115,8 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
                 ).show()
             }
             ?.addOnFailureListener {
+                // NOTE: don't forget to log out the user.
+                FirebaseAuth.getInstance().signOut();
                 progressDialog.dismiss()
                 Toast.makeText(
                     this@SignInActivity,

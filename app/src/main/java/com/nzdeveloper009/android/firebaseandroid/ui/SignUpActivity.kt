@@ -134,10 +134,12 @@ class SignUpActivity : AppCompatActivity(), OnClickListener {
     }
 
     private fun sendVerificationEmail() {
+
         FirebaseAuth.getInstance().currentUser
             ?.sendEmailVerification()
             ?.addOnSuccessListener {
                 progressDialog.dismiss()
+                FirebaseAuth.getInstance().signOut();
                 Toast.makeText(
                     this@SignUpActivity,
                     resources.getString(R.string.email_verification_msg),
